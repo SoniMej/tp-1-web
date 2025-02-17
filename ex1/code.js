@@ -1,7 +1,7 @@
 
 function level() {
     while (true) {
-        let choice =prompt("Choisissez un niveau de difficulté :\n easy (1-10, 6 tentatives)\n medium (1-50, 5 tentatives)\n hard (1-100, 4 tentatives)");
+        let choice =prompt("Choose a level :\n easy (1-10, 6 tentatives)\n medium (1-50, 5 tentatives)\n hard (1-100, 4 tentatives)");
         if (choice === "easy") {
             return { min: 1, max: 10, att: 6 };
         } else if (choice === "medium") {
@@ -24,13 +24,13 @@ function game() {
     let attLeft = D.att;
     let found = false;
 
-    alert(`entrer un nombre entre ${D.min} and ${D.max} Vous avez ${D.att} tentatives.`);
+    alert(`enter a nombre between ${D.min} and ${D.max} you have ${D.att} tries.`);
 
     while (attLeft > 0 && !found) {
-        let guess = parseInt(prompt(`Devinez le nombre (Tentatives restantes: ${attLeft}):`), 10);
+        let guess = parseInt(prompt(`guess the number (tries left: ${attLeft}):`), 10);
 
         if (isNaN(guess) || guess < D.min || guess > D.max) {
-            alert(`Veuillez entrer un nombre entre ${D.min} et ${D.max}.`);
+            alert(`enter a nombre between ${D.min} and ${D.max}.`);
             continue;
         }
 
