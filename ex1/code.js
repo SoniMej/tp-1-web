@@ -1,7 +1,7 @@
 
 function level() {
     while (true) {
-        let choice =prompt("Choose a level :\n easy (1-10, 6 tentatives)\n medium (1-50, 5 tentatives)\n hard (1-100, 4 tentatives)");
+        let choice =prompt("Choose a level :\n easy (1-10, 6 tries)\n medium (1-50, 5 tries)\n hard (1-100, 4 tries)");
         if (choice === "easy") {
             return { min: 1, max: 10, att: 6 };
         } else if (choice === "medium") {
