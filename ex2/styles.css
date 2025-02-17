@@ -1,0 +1,11 @@
+.controle {
+    display: flex;   
+}
+body{
+    background-color: rgb(196, 207, 225);
+}
+input,
+select{
+    width: 220px;
+    margin-right: 30px;
+}
