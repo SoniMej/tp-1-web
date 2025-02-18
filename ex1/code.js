@@ -57,7 +57,7 @@ function game() {
     
 }
 function replay() {
-    play();
+    game();
     
 }
 
